@@ -1,0 +1,24 @@
+version: "3.8"
+
+services:
+  item-app:
+    image: mfdsix/item-app:v1
+    container_name: item-app
+    ports:
+      - "80:8080"
+    depends_on:
+      - item-db
+    restart: unless-stopped
+    environment:
+      - DB_HOST=item-db
+
+  item-db:
+    image: mongo:3
+    container_name: item-db
+    restart: unless-stopped
+    volumes:
+      - app-db:/data/db
+
+volumes:
+  app-db:
+    

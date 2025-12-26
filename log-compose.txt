@@ -1,0 +1,28 @@
+[+] Running 22/22
+ ✔ item-db Pulled                                                                                                                                 22.5s 
+   ✔ 92473f7ef455 Pull complete                                                                                                                    8.9s 
+   ✔ fb52bde70123 Pull complete                                                                                                                    8.9s 
+   ✔ 64788f86be3f Pull complete                                                                                                                    8.9s 
+   ✔ 33f6d5f2e001 Pull complete                                                                                                                    9.0s 
+   ✔ 570e56656608 Pull complete                                                                                                                    9.0s 
+   ✔ f518a872ab12 Pull complete                                                                                                                    9.4s 
+   ✔ c9bdae151f64 Pull complete                                                                                                                    9.5s 
+   ✔ b2c58da5f563 Pull complete                                                                                                                    9.5s 
+   ✔ 2928038a6053 Pull complete                                                                                                                    9.6s 
+   ✔ 29a16c1b79ab Pull complete                                                                                                                    9.6s 
+   ✔ efec0f86077c Pull complete                                                                                                                   18.2s 
+   ✔ 261a04726d31 Pull complete                                                                                                                   18.2s 
+   ✔ 7c4062426e72 Pull complete                                                                                                                   18.2s 
+ ✔ item-app Pulled                                                                                                                                 4.7s 
+   ✔ f56be85fc22e Already exists                                                                                                                   0.0s 
+   ✔ 8f665685b215 Already exists                                                                                                                   0.0s 
+   ✔ e5fca6c395a6 Already exists                                                                                                                   0.0s 
+   ✔ 561cb69653d5 Already exists                                                                                                                   0.0s 
+   ✔ 3924bde2bee7 Already exists                                                                                                                   0.0s 
+   ✔ ada53aea6ecd Already exists                                                                                                                   0.0s 
+   ✔ 602a2c0f3a12 Already exists                                                                                                                   0.0s 
+[+] Running 4/4
+ ✔ Network first-project_default  Created                                                                                                          0.1s 
+ ✔ Volume "first-project_app-db"  Created                                                                                                          0.0s 
+ ✔ Container item-db              Started                                                                                                          0.8s 
+ ✔ Container item-app             Started                                                                                                          0.6s 
