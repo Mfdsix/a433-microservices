@@ -18,23 +18,23 @@ type JobModel struct {
 }
 
 func (m *JobModel) GetJobPosts(ctx context.Context) ([]*models.JobPost, error) {
-	col := m.DB.Collection("jobposts")
+    col := m.DB.Collection("jobposts")
 
-	findOptions := options.Find()
-	findOptions.SetSort(bson.D{{"_id", -1}})
+    findOptions := options.Find()
+    findOptions.SetSort(bson.D{{"_id", -1}})
 
-	data, err := col.Find(ctx, bson.M{}, findOptions)
-	if err != nil {
-		return nil, err
-	}
+    data, err := col.Find(ctx, bson.M{}, findOptions)
+    if err != nil {
+        return make([]*models.JobPost, 0), err 
+    }
 
-	var jobposts []*models.JobPost
+    jobposts := make([]*models.JobPost, 0) 
 
-	if err = data.All(ctx, &jobposts); err != nil {
-		return nil, err
-	}
+    if err = data.All(ctx, &jobposts); err != nil {
+        return nil, err
+    }
 
-	return jobposts, nil
+    return jobposts, nil
 }
 
 func (m *JobModel) GetJobPost(ctx context.Context, id string) (*models.JobPost, error) {
