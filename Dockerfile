@@ -5,5 +5,5 @@ COPY package*.json ./
 FROM base
 ENV NODE_ENV=production
 RUN npm ci
-COPY ./*.js ./
+COPY ./ ./
 CMD ["node", "index.js"]
